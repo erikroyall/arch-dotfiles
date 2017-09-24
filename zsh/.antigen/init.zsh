@@ -1,5 +1,5 @@
 #-- START ZCACHE GENERATED FILE
-#-- GENERATED: Sun Sep 24 16:13:26 IST 2017
+#-- GENERATED: Sun Sep 24 20:34:54 IST 2017
 #-- ANTIGEN v2.0.2
 _antigen () {
 	local -a _1st_arguments
@@ -31,7 +31,7 @@ _antigen () {
 	esac
 }
 antigen () {
-  [[ "$ZSH_EVAL_CONTEXT" =~ "toplevel:*" || "$ZSH_EVAL_CONTEXT" =~ "cmdarg:*" ]] && source "/home/erik/antigen.zsh" && eval antigen $@;
+  [[ "$ZSH_EVAL_CONTEXT" =~ "toplevel:*" || "$ZSH_EVAL_CONTEXT" =~ "cmdarg:*" ]] && source "/home/erik/arch-dotfiles/zsh/antigen.zsh" && eval antigen $@;
   return 0;
 }
 fpath+=(/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/lib /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found); PATH="$PATH:"

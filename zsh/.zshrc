@@ -1,4 +1,5 @@
 source $HOME/antigen.zsh
+source $HOME/.config/zsh/tmuxinator.zsh
 
 antigen use oh-my-zsh
 
@@ -18,3 +19,5 @@ export PATH=~/.npm-global/bin:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export EDITOR='vim'
