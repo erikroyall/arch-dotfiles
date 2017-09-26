@@ -57,6 +57,11 @@ On Ubuntu:
     make
     sudo make install
 
+    # Polybar
+    wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb
+    sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb
+    sudo apt update && sudo apt install -y polybar
+
 
 # Installation
 
