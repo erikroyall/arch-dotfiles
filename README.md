@@ -48,7 +48,7 @@ On Ubuntu:
         libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev  \
         libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev  \
         autoconf libxcb-xrm0 libxcb-xrm-dev automake
-    git clone https://www.github.com/Airblader/i3 i3-gaps \
+    git clone https://www.github.com/Airblader/i3 i3-gaps 
     cd i3-gaps
     autoreconf --force --install
     rm -rf build/
