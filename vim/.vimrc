@@ -37,7 +37,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
+Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'mattn/emmet-vim', {
   \ 'for': ['php', 'html', 'javascript', 'jsx', 'ejs', 'hbs']
