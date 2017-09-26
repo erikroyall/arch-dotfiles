@@ -21,7 +21,42 @@ Requires GNU stow. Contains config files for i3, polybar, urxvt, vim, zsh, npm a
 
 To install dependencies on Arch Linux, run:
 
-    yaourt -S curl stow i3-gaps rofi light scrot nitrogen polybar zsh vim rxvt-unicode compton nodejs npm adobe-source-code-pro-fonts alsa-utils python-pywal
+    yaourt -S curl stow i3-gaps rofi light scrot nitrogen polybar zsh vim rxvt-unicode compton
+        \ nodejs npm adobe-source-code-pro-fonts alsa-utils python-pywal
+
+On Ubuntu:
+
+    sudo apt install rofi curl stow scrot nitrogen zsh vim rxvt-unicode
+        \ compton alsa-utils python3 python3-pip imagemagick
+    
+    # Pywal
+    sudo pip3 install pywal
+    
+    # Light
+    git clone https://github.com/haikarainen/light.git
+    cd light
+    make
+    sudo make install
+    cd ~
+    
+    # Nodejs
+    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    
+    # i3-gaps
+    sudo apt install libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev
+        \ libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev 
+        \ libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev 
+        \ autoconf libxcb-xrm0 libxcb-xrm-dev automake
+    git clone https://www.github.com/Airblader/i3 i3-gaps
+    cd i3-gaps
+    autoreconf --force --install
+    rm -rf build/
+    mkdir -p build && cd build/
+    ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+    make
+    sudo make install
+
 
 # Installation
 
