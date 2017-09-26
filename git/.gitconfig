@@ -3,3 +3,5 @@
 [user]
 	name = Erik Royall
 	email = erikroyall@hotmail.com
+[credential]
+	helper = cache --timeout=3600
