@@ -54,3 +54,10 @@ To install dependencies on Arch Linux, run:
 
     cd arch-dotfiles
     wal -i wallpaper.png
+
+# Screenshots
+
+![1.png](screenshots/1.png)
+![2.png](screenshots/2.png)
+![3.png](screenshots/3.png)
+
