@@ -40,20 +40,20 @@ To install dependencies on Arch Linux, run:
 
 - Install vim-plug
 
-    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-    vim +PlugInstall +qall
+      vim +PlugInstall +qall
 
 - Install antigen
 
-    cd ~
-    curl -L git.io/antigen > antigen.zsh
+      cd ~
+      curl -L git.io/antigen > antigen.zsh
 
 - Set a new wallpaper
 
-    cd arch-dotfiles
-    wal -i wallpaper.png
+      cd arch-dotfiles
+      wal -i wallpaper.png
 
 # Screenshots
 
