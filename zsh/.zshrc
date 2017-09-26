@@ -1,5 +1,4 @@
 source $HOME/antigen.zsh
-source $HOME/.config/zsh/tmuxinator.zsh
 
 antigen use oh-my-zsh
 
