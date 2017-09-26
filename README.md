@@ -9,6 +9,7 @@ Requires GNU stow. Contains config files for i3, polybar, urxvt, vim, zsh, npm a
 - polybar
 - rofi
 - light
+- scrot
 - amixer
 - urxvt
 - compton
@@ -20,7 +21,7 @@ Requires GNU stow. Contains config files for i3, polybar, urxvt, vim, zsh, npm a
 
 To install dependencies on Arch Linux, run:
 
-    yaourt -S curl stow i3-gaps rofi light nitrogen polybar zsh vim rxvt-unicode compton nodejs npm adobe-source-code-pro-fonts alsa-utils python-pywal
+    yaourt -S curl stow i3-gaps rofi light scrot nitrogen polybar zsh vim rxvt-unicode compton nodejs npm adobe-source-code-pro-fonts alsa-utils python-pywal
 
 # Installation
 
@@ -42,6 +43,8 @@ To install dependencies on Arch Linux, run:
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+    vim +PlugInstall +qall
+
 - Install antigen
 
     cd ~
@@ -49,4 +52,5 @@ To install dependencies on Arch Linux, run:
 
 - Set a new wallpaper
 
-    wal -i /path/to/image
+    cd arch-dotfiles
+    wal -i wallpaper.png

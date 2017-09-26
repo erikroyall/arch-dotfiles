@@ -157,6 +157,7 @@ bindsym XF86AudioMute exec amixer -D pulse -q set Master toggle
 bindsym XF86MonBrightnessUp exec light -A 1
 bindsym XF86MonBrightnessDown exec light -U 1
 
+bindsym $mod+z exec scrot 
 # Gaps
 smart_gaps on
 focus_follows_mouse off
