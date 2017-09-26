@@ -1,5 +1,5 @@
 #-- START ZCACHE GENERATED FILE
-#-- GENERATED: Sun Sep 24 20:34:54 IST 2017
+#-- GENERATED: Mon Sep 25 17:56:19 IST 2017
 #-- ANTIGEN v2.0.2
 _antigen () {
 	local -a _1st_arguments
@@ -34,7 +34,7 @@ antigen () {
   [[ "$ZSH_EVAL_CONTEXT" =~ "toplevel:*" || "$ZSH_EVAL_CONTEXT" =~ "cmdarg:*" ]] && source "/home/erik/arch-dotfiles/zsh/antigen.zsh" && eval antigen $@;
   return 0;
 }
-fpath+=(/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/lib /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found); PATH="$PATH:"
+fpath+=(/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/lib /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found /home/erik/.antigen/bundles/zsh-users/zsh-completions); PATH="$PATH:"
 _antigen_compinit () {
   autoload -Uz compinit; compinit -C -d "/home/erik/.antigen/.zcompdump"; compdef _antigen antigen
   add-zsh-hook -D precmd _antigen_compinit
@@ -63,6 +63,7 @@ source "/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/lib/theme-and-appeara
 source "/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git/git.plugin.zsh";
 source "/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip/pip.plugin.zsh";
 source "/home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh";
+source "/home/erik/.antigen/bundles/zsh-users/zsh-completions/zsh-completions.plugin.zsh";
 #-- SOURCE: /home/erik/.antigen/bundles/robbyrussell/oh-my-zsh/themes/robbyrussell.zsh-theme
 ret_status="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
@@ -72,7 +73,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 ;#-- END SOURCE
-typeset -aU _ANTIGEN_BUNDLE_RECORD;      _ANTIGEN_BUNDLE_RECORD=('https://github.com/robbyrussell/oh-my-zsh.git lib plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git plugins/git plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git plugins/pip plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git plugins/command-not-found plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git themes/robbyrussell.zsh-theme theme true')
+typeset -aU _ANTIGEN_BUNDLE_RECORD;      _ANTIGEN_BUNDLE_RECORD=('https://github.com/robbyrussell/oh-my-zsh.git lib plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git plugins/git plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git plugins/pip plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git plugins/command-not-found plugin true' 'https://github.com/zsh-users/zsh-completions.git / plugin true' 'https://github.com/robbyrussell/oh-my-zsh.git themes/robbyrussell.zsh-theme theme true')
 _ANTIGEN_CACHE_LOADED=true ANTIGEN_CACHE_VERSION='v2.0.2'
 #-- END ZCACHE GENERATED FILE
 

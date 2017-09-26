@@ -6,6 +6,9 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
+antigen bundle zsh-users/zsh-completions
+#antigen bundle zsh-users/zsh-autosuggestions
+#antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen theme robbyrussell
 
@@ -20,4 +23,8 @@ export PATH=~/.npm-global/bin:$PATH
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
+export TERM="xterm-256color"
 export EDITOR='vim'
+
+(wal -r -t &)
+
