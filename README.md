@@ -1,6 +1,6 @@
 # My Dotfiles
 
-Requires GNU stow. Contains config files for i3, polybar, urxvt, vim, tmux, zsh, npm and git.
+Requires GNU stow. Contains config files for i3, polybar, urxvt, vim, zsh, npm and git.
 
 # Dependencies
 
@@ -15,13 +15,12 @@ Requires GNU stow. Contains config files for i3, polybar, urxvt, vim, tmux, zsh,
 - nodejs
 - pywal
 - vim
-- tmux
 - nitrogen
 - Font: Source Code Pro
 
 To install dependencies on Arch Linux, run:
 
-    yaourt -S curl stow i3-gaps rofi light nitrogen polybar zsh vim tmux rxvt-unicode compton nodejs npm adobe-source-code-pro-fonts alsa-utils python-pywal
+    yaourt -S curl stow i3-gaps rofi light nitrogen polybar zsh vim rxvt-unicode compton nodejs npm adobe-source-code-pro-fonts alsa-utils python-pywal
 
 # Installation
 
@@ -29,7 +28,6 @@ To install dependencies on Arch Linux, run:
     cd arch-dotfiles
     stow vim
     stow zsh
-    stow tmux
     stow i3
     stow polybar
     stow scripts
@@ -49,3 +47,6 @@ To install dependencies on Arch Linux, run:
     cd ~
     curl -L git.io/antigen > antigen.zsh
 
+- Set a new wallpaper
+
+    wal -i /path/to/image
