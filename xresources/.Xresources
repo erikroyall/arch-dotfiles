@@ -1,0 +1,10 @@
+URxvt.font: xft:Source Code Pro:size=13
+URxvt.scrollBar: false
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
+URxvt.borderLess: false
+URxvt.transparent: true
+URxvt.shading: 15
+URxvt.fading: 2%
+URxvt.depth: 16
+URxvt.fadeColor: grey
