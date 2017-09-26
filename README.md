@@ -26,7 +26,7 @@ To install dependencies on Arch Linux, run:
 
 On Ubuntu:
 
-    sudo apt install rofi curl stow scrot nitrogen zsh vim rxvt-unicode \
+    sudo apt install build-essential rofi curl stow scrot nitrogen zsh vim rxvt-unicode \
         compton alsa-utils python3 python3-pip imagemagick
     
     # Pywal
