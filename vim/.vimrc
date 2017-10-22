@@ -1,5 +1,6 @@
 " General
 set relativenumber
+set number
 set showmatch
 set nocompatible
 set mouse=
@@ -27,13 +28,12 @@ set backspace=indent,eol,start
 " Plugins
 call plug#begin('~/.vim/plugged')
 
-"Plug 'jeaye/color_coded', { 
-"  \ 'do': 'cmake . && make && make install',
-"  \ 'for': ['c', 'cpp']
-"  \ }
+Plug 'jeaye/color_coded', { 
+  \ 'do': 'cmake . && make && make install',
+  \ 'for': ['c', 'cpp']
+  \ }
 Plug 'junegunn/goyo.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-"Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -44,22 +44,21 @@ Plug 'mattn/emmet-vim', {
   \ }
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
-"Plug 'yggdroot/indentline'
 Plug 'dylanaraps/wal.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mattn/emmet-vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'dracula/vim'
-"Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdtree'
 Plug 'itchyny/vim-haskell-indent'
-Plug 'arcticicestudio/nord-vim'
-"Plug 'ap/vim-buftabline'
 Plug 'mkitt/tabline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'Valloric/YouCompleteMe'
-Plug 'reedes/vim-colors-pencil'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'ervandew/supertab'
 
 call plug#end()
 
@@ -71,9 +70,9 @@ let g:airline_theme='pencil'
 let g:airline_powerline_fonts = 1
 
 " Colorsheme
-colorscheme pencil
-"let g:one_allow_italics = 1 " I love italic for comments
 set background=dark
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 
 " Leader
 let mapleader = ","
@@ -89,3 +88,5 @@ hi TabLine ctermfg=Blue ctermbg=Black cterm=NONE
 hi TabLineFill ctermfg=Blue ctermbg=Black cterm=NONE
 hi TabLineSel ctermfg=White ctermbg=Blue cterm=NONE
 
+" Makefiles
+autocmd FileType make setlocal noexpandtab

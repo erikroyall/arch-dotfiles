@@ -9,7 +9,7 @@ antigen bundle zsh-users/zsh-completions
 #antigen bundle zsh-users/zsh-autosuggestions
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme dracula
+antigen theme afowler
 
 antigen apply
 
@@ -19,6 +19,7 @@ export PATH=~/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+alias e="emacs -nw"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
