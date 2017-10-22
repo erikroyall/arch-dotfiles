@@ -65,7 +65,7 @@ call plug#end()
 " Status
 set laststatus=2
 set noshowmode
-let g:airline_theme='pencil'
+let g:airline_theme='gruvbox'
 
 let g:airline_powerline_fonts = 1
 
@@ -90,3 +90,4 @@ hi TabLineSel ctermfg=White ctermbg=Blue cterm=NONE
 
 " Makefiles
 autocmd FileType make setlocal noexpandtab
+
