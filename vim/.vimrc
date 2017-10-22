@@ -59,18 +59,19 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'mkitt/tabline.vim'
 Plug 'morhetz/gruvbox'
 Plug 'Valloric/YouCompleteMe'
+Plug 'reedes/vim-colors-pencil'
 
 call plug#end()
 
 " Status
 set laststatus=2
 set noshowmode
-let g:airline_theme='gruvbox'
+let g:airline_theme='pencil'
 
 let g:airline_powerline_fonts = 1
 
 " Colorsheme
-colorscheme gruvbox
+colorscheme pencil
 "let g:one_allow_italics = 1 " I love italic for comments
 set background=dark
 
