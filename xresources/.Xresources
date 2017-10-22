@@ -1,4 +1,42 @@
-URxvt.font: xft:Source Code Pro:size=13
+! special
+*.foreground:   #ffffff
+*.background:   #000000
+*.cursorColor:  #ffffff
+
+! black
+*.color0:       #303030
+*.color8:       #5e5e5e
+
+! red
+*.color1:       #a43261
+*.color9:       #ff9fc9
+
+! green
+*.color2:       #006ca5
+*.color10:      #3bd6ff
+
+! yellow
+*.color3:       #007086
+*.color11:      #00ddf4
+
+! blue
+*.color4:       #6751a6
+*.color12:      #d5b8ff
+
+! magenta
+*.color5:       #913e88
+*.color13:      #ffa7f6
+
+! cyan
+*.color6:       #0061b1
+*.color14:      #93c9ff
+
+! white
+*.color7:       #c6c6c6
+*.color15:      #ffffff
+
+
+URxvt.font: xft:Fira Mono:size=16
 URxvt.scrollBar: false
 URxvt.internalBorder: 0
 URxvt.externalBorder: 0
@@ -8,3 +46,18 @@ URxvt.shading: 15
 URxvt.fading: 2%
 URxvt.depth: 16
 URxvt.fadeColor: grey
+URxvt.perl-ext-common: fullscreen,resize-font
+URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+!URxvt.letterSpace: -1
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+URxvt.secondaryWheel: 1
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!URxvt.tabbed.tabbar-fg: 15
+!URxvt.tabbed.tabbar-bg: 16
+!URxvt.tabbed.tab-fg: 15
+!URxvt.tabbed.tab-bg: 232

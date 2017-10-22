@@ -27,13 +27,13 @@ set backspace=indent,eol,start
 " Plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'jeaye/color_coded', { 
-  \ 'do': 'cmake . && make && make install',
-  \ 'for': ['c', 'cpp']
-  \ }
+"Plug 'jeaye/color_coded', { 
+"  \ 'do': 'cmake . && make && make install',
+"  \ 'for': ['c', 'cpp']
+"  \ }
 Plug 'junegunn/goyo.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdcommenter'
@@ -44,17 +44,47 @@ Plug 'mattn/emmet-vim', {
   \ }
 Plug 'sheerun/vim-polyglot'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'yggdroot/indentline'
+"Plug 'yggdroot/indentline'
+Plug 'dylanaraps/wal.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'mattn/emmet-vim'
+Plug 'lifepillar/vim-solarized8'
+Plug 'dracula/vim'
+"Plug 'rakr/vim-one'
+Plug 'scrooloose/nerdtree'
+Plug 'itchyny/vim-haskell-indent'
+Plug 'arcticicestudio/nord-vim'
+"Plug 'ap/vim-buftabline'
+Plug 'mkitt/tabline.vim'
+Plug 'morhetz/gruvbox'
+Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
 " Status
 set laststatus=2
 set noshowmode
-let g:lightline = {
-  \ 'colorscheme': 'seoul256',
-  \ }
+let g:airline_theme='gruvbox'
+
+let g:airline_powerline_fonts = 1
+
+" Colorsheme
+colorscheme gruvbox
+"let g:one_allow_italics = 1 " I love italic for comments
+set background=dark
 
 " Leader
 let mapleader = ","
+
+map <C-x> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+set hidden
+nnoremap <C-k> :bnext<CR>
+nnoremap <C-j> :bprev<CR>
+
+hi TabLine ctermfg=Blue ctermbg=Black cterm=NONE
+hi TabLineFill ctermfg=Blue ctermbg=Black cterm=NONE
+hi TabLineSel ctermfg=White ctermbg=Blue cterm=NONE
 

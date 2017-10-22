@@ -9,12 +9,13 @@ antigen bundle zsh-users/zsh-completions
 #antigen bundle zsh-users/zsh-autosuggestions
 #antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme robbyrussell
+antigen theme dracula
 
 antigen apply
 
 # PATH modifications
 export PATH=~/.npm-global/bin:$PATH
+export PATH=~/bin:$PATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
@@ -25,5 +26,25 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export TERM="xterm-256color"
 export EDITOR='vim'
 
-(wal -r -t &)
+#(wal -r -t &)
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+
+export GOPATH="$HOME/go"
+export PATH="$HOME/go/bin:$PATH"
+
+function fortran {
+  gcc $1.f95 -o $1 -lgfortran && ./$1
+}
+
+function c {
+  gcc $1.c -o $1 && ./$1
+}
+
+function c++ {
+  g++ $1.cpp -o $1 && ./$1
+}
+
 
